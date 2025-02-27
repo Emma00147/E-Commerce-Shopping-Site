@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	position: relative;
+	font-family: sans-serif, 'poppings';
+}
+.nav-link{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 5%;
+	background-color: #ccc;
+	width: 100%;
+	height: 15vh;
+}
+.nav-link ul li{
+	display: inline-flex;
+	list-style: none;
+	margin-right: 15px;
+}
+.header-name{
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+}
+.nav-link ul li a{
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+	font-weight: 500;
+	position: relative;
+	transition: 0.3s;
+}
+.nav-link ul li a::after{
+   content: '';
+   width: 0%;
+   height: 3px;
+   background-color: red;
+   border-radius: 4px;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+}
+.nav-link ul li a:hover::after{
+   width: 100%;
+}
+.nav-link img,#navLinks img{
+	display: none;
+}
+.mini-banner{
+	width: 100%;
+	height: 60vh;
+	background-image: url("image/img1.png");
+	background-size: cover;
+	background-position: center;
+}
+.sale-cart{
+	margin: 35px 5%;
+}
+.sm{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sm h2{
+	font-weight: 60;
+	font-size: 22px;
+	color: #000;
+}
+.cart{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+}
+.card{
+	margin: 20px 2px;
+	position: relative;
+}
+.card.sub-text{
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+.card-body{
+	display: flex;
+	flex-direction: column;
+}
+.card-body span{
+	margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
